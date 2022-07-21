@@ -1,0 +1,384 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 70px;
+
+}
+
+/*---------- top-section ---------*/
+
+.top {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.top-banner {
+    width: 1321px;
+    height: 646px;
+    display: flex;
+    background-color: #161616;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-bottom: 5%;
+
+}
+
+.top-image:hover {
+    transform: rotate(360deg);
+}
+
+.top-banner button {
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 16px 25px;
+    background-color: #DD0000;
+}
+
+.top-banner a {
+    text-decoration: none;
+    color: white;
+}
+
+.top-info {
+    width: 531px;
+    height: 424px;
+    margin-left: 106px;
+}
+
+.top-image {
+
+    margin-top: 33px;
+    margin-left: 24px;
+    margin-right: 79px;
+    margin-bottom: -5.5px;
+    transition: transform 2s ease-out;
+}
+
+.top-image img {
+    width: 581px;
+    height: 613px;
+}
+
+/* ---------
+.........main section........
+------------------- */
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px;
+    margin-bottom: 100px;
+}
+
+/* ----Side-section----- */
+
+.side-section {
+    background-color: #161616;
+    width: 312px;
+    height: 312px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.side-section button:hover {
+    background-color: violet;
+}
+
+.side-section button {
+    border: none;
+    border-radius: 10px;
+    width: 252px;
+    height: 60px;
+    margin: 30px 30px;
+}
+
+#first-button {
+    margin-bottom: 0px;
+}
+
+
+#first-button a {
+    text-decoration: none;
+    color: black;
+}
+
+#for-blog {
+    background-color: #DD0000;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+/* ---------blog section------ */
+
+.blog {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
+    grid-column-gap: 12px;
+    grid-row-gap: 24px;
+    margin-left: 10px;
+}
+
+.transfer {
+    width: 312px;
+    height: 362px;
+    border: 1px solid lightgrey;
+    border-radius: 12px;
+
+
+}
+
+.transfer-info {
+    margin-top: 20px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.image {
+    width: 100%;
+}
+
+.time-and-comment {
+    width: 143px;
+    height: 26px;
+    color:
+        #4D4D4D
+}
+
+.time-and-comment,
+.time,
+.comment {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* -------view button-------- */
+
+.view-all {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.view-button {
+    display: none;
+    background-color: #DD0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+/* -----------footer section--------- */
+
+footer {
+    background-color: #161616;
+    color: white;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+.footer-heading {
+    font-size: 40px;
+    padding-top: 100px;
+}
+
+hr {
+
+    border: 0.5px solid lightgray;
+    margin-left: 140px;
+    margin-right: 140px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+    column-gap: 40px;
+}
+
+.social-links {
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.fa-brands:before {
+    color: white;
+}
+
+/* -------media query---------- */
+
+/* ..........for mobile devices......... */
+
+@media only screen and (max-width:688px) {
+    body {
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 22px;
+        line-height: 33px;
+        text-align: center;
+    }
+
+    .top-banner {
+        width: 91%;
+        height: fit-content;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .top-banner p {
+
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .top-info {
+        width: 80%;
+        align-items: center;
+        margin-left: 0;
+        height: 264px;
+        text-align: center;
+    }
+
+
+    .top-image {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .top-image img {
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main {
+        width: 90%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 26px 26px;
+    }
+
+
+    .side-section {
+        background-color: white;
+        align-items: center;
+    }
+
+    .blog {
+        margin-left: -10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+/* --------for tablet devices--------- */
+
+@media only screen and (min-width:689px) and (max-width:992px) {
+    body {
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 40px;
+        line-height: 50px;
+
+    }
+
+    .top-banner {
+        width: 86%;
+        height: 464px;
+
+    }
+
+    .top-banner p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .top-info {
+        width: 95%;
+
+        margin-left: 20px;
+        height: 264px;
+    }
+
+
+    .top-image {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .top-image img {
+        width: 90%;
+        height: 431px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main {
+        width: 90%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .side-section {
+        height: 214px;
+        width: 100%;
+        flex-direction: row;
+        background-color: white;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+
+    .side-section button {
+        margin: 0;
+        width: 190px;
+
+    }
+
+    .blog {
+        margin-left: 0;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .navigation {
+        align-items: center;
+        justify-content: center;
+        column-gap: 18px;
+    }
+
+    .view-button {
+        display: block;
+    }
+
+}
